@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "dockerComposeFile": ["../docker-compose.yaml", "docker-compose.dev.yaml"],
+  "service": "server",
+  "remoteUser": "containeruser",
+  "workspaceFolder": "/home/containeruser/app",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
+}
